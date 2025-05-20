@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troop 123 - Boy Scouts of America</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to top, #2e7d32, #a5d6a7);
+      color: white;
+    }
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: url('https://images.unsplash.com/photo-1532274402917-5aadf881bdf4?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-color: rgba(46, 125, 50, 0.8);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    .cta {
+      margin-top: 2rem;
+    }
+    .cta input[type="text"] {
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 4px;
+      width: 280px;
+    }
+    .cta button {
+      padding: 0.75rem 1rem;
+      margin-left: 0.5rem;
+      border: none;
+      background-color: #1b5e20;
+      color: white;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .links {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .links a {
+      color: white;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .footer {
+      background: #1b5e20;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    .footer img {
+      height: 32px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Troop 123</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>Adventure. Leadership. Service.</h1>
+    <p>Building tomorrow's leaders, one scout at a time.</p>
+    <div class="cta">
+      <input type="text" placeholder="Ask a ScoutBot...">
+      <button>Go</button>
+    </div>
+    <div class="links">
+      <a href="#join">Join Our Troop</a>
+      <a href="#merit">Merit Badge Info</a>
+    </div>
+  </div>
+  <div class="footer">
+    <div>© 2025 Troop 123 - Boy Scouts of America</div>
+    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Boy_Scouts_of_America_corporate_trademark.svg/512px-Boy_Scouts_of_America_corporate_trademark.svg.png" alt="BSA Logo"></div>
+  </div>
+</body>
+</html>
