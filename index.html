@@ -6,13 +6,21 @@
   <title>Troop 123 - Boy Scouts of America</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to top, #2e7d32, #a5d6a7);
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      background: url('beautiful-gradient-spring-landscape_23-2148448598.avif') center/cover no-repeat;
+      background-attachment: fixed;
       color: white;
     }
     header {
+      background: #1b5e20;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -27,8 +35,6 @@
     .hero {
       text-align: center;
       padding: 6rem 2rem;
-      background: url('https://images.unsplash.com/photo-1532274402917-5aadf881bdf4?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      background-blend-mode: multiply;
       background-color: rgba(46, 125, 50, 0.8);
     }
     .hero h1 {
@@ -77,9 +83,17 @@
       justify-content: space-between;
       align-items: center;
       font-size: 0.9rem;
+      margin-top: auto;
     }
     .footer img {
       height: 32px;
+    }
+    .footer .contact {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer .contact span {
+      margin-bottom: 4px;
     }
   </style>
 </head>
@@ -106,7 +120,12 @@
     </div>
   </div>
   <div class="footer">
-    <div>© 2025 Troop 123 - Boy Scouts of America</div>
+    <div class="contact">
+      <span>© 2025 Troop 123 - Boy Scouts of America</span>
+      <span>📍 Springfield, USA</span>
+      <span>📞 (555) 123-4567</span>
+      <span>✉️ contact@troop123.org</span>
+    </div>
     <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Boy_Scouts_of_America_corporate_trademark.svg/512px-Boy_Scouts_of_America_corporate_trademark.svg.png" alt="BSA Logo"></div>
   </div>
 </body>
